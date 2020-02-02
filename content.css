@@ -1,9 +1,12 @@
 .troll-button {
   cursor: pointer;
   user-select: none;
+  height: 32px;
+  line-height: 35px;
+  margin-left: 10px;
 }
 .troll-counter::before {
-  content: "•";
+  content: '•';
   display: inline-block;
   padding: 0 2px 0;
 }
@@ -21,7 +24,6 @@
 
 .popover__wrapper {
   position: relative;
-  margin-top: 1.5rem;
   display: inline-block;
 }
 .popover__content {
@@ -38,7 +40,7 @@
 .popover__content:before {
   position: absolute;
   z-index: -1;
-  content: "";
+  content: '';
   right: calc(50% - 10px);
   top: -8px;
   border-style: solid;
