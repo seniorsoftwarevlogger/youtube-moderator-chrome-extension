@@ -2,28 +2,17 @@
   "name": "YouTube Moderator",
   "description": "Helps you to stay sane moderating comments",
   "version": "1.0",
-  "permissions": [
-    "storage",
-    "activeTab"
-  ],
+  "permissions": ["storage", "activeTab"],
   "background": {
-    "scripts": [
-      "background.js"
-    ],
+    "scripts": ["background.js"],
     "persistent": false
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://studio.youtube.com/*"
-      ],
+      "matches": ["https://studio.youtube.com/*"],
       "run_at": "document_idle",
-      "js": [
-        "content.js"
-      ],
-      "css": [
-        "content.css"
-      ]
+      "js": ["content.js"],
+      "css": ["content.css"]
     }
   ],
   "manifest_version": 2
