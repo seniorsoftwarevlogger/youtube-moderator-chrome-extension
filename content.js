@@ -108,7 +108,12 @@ function addButtons() {
     chrome.storage.local.get([channelLink], function(trollComments) {
       if (trollComments && trollComments[channelLink]) {
         counterContainer.innerText = trollComments[channelLink].length;
-        popoverContent.innerText = trollComments[channelLink].join(" ---- ");
+        popoverContent.innerHTML = trollComments[channelLink]
+          .map(
+            trollComment =>
+              `<div class="popover__comment">${trollComment}</div>`
+          )
+          .join("");
       }
     });
   });

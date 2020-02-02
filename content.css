@@ -35,7 +35,11 @@
   background-color: #bfbfbf;
   padding: 1.5rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  width: auto;
+  width: 500px;
+  line-height: 1.2em;
+}
+.popover__comment {
+  margin-bottom: 10px;
 }
 .popover__content:before {
   position: absolute;
